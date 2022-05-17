@@ -41,12 +41,21 @@ TODO
 
 ## 4 - Execute your script
 
-* Execute the script by simply clicking the green arrow icon on the left of line 8. 
-* The script will fail because it's missing an input argument.  
+* Execute the script by simply clicking the green arrow icon on the left of line 8.
+
+
+![Click green arrow](../images/run_script.png)
+
+![Run script](../images/run_script_2.png)
+
+
+* The script will fail because it's **missing an input argument**.  
 You will need to edit the Run Configurations.
 Fortunately, by clicking the green arrow, this will have already created a configuration without arguments ! 
-You can find it on the upper right corner of the IDE, or in the program menu under Run -> Edit Configurations...
+You can find it on the upper right corner of the IDE, or in the program menu under Run -> Edit Configurations...  
+
 ![Edit your run configurations](../images/edit_run_config.png)
+
 * Enter any number in the "Parameters: " textbox.
 * Run the script again.
 * When you're done, commit your changes.
@@ -69,6 +78,12 @@ Your branch is now visible on GitHub. Note that for any subsequent changes to th
 
 * On your browser, go to the GitHub page for this repository. 
 * Navigate to the "Pull requests" tab. 
+
+![Github pull request](../images/github_pull_request.png)
+
 * Click on the green "New pull request" button on the upper right.
 * By default, this will compare `main` with `main`. Replace the right-hand branch with your feature branch. 
+
+![Choose correct branch](../images/github_pull_request_2.png)
+
 * Fill in the title then click "Create pull request".

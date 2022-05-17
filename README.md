@@ -23,6 +23,10 @@ https://github.com/sidel-iot/python-training-LV1-workshops.git
 Pycharm will immediately prompt you that a default interpreter was set up. 
 We are going to change this. 
 
+
+_Note: it's recommended to set up a new virtual environment for each project, 
+so that you always keep their dependencies separate._
+
 If you don't see the prompt, you can always find the settings via the PyCharm menu (in the Preferences/Settings, search for Python interpreter).
 
 **Click on "Configure a Python interpreter..."**
