@@ -1,7 +1,12 @@
 def main():
+    """main"""
+
+
+
+
     # open file
     with open("input.txt","r") as f:
-        content=f.readlines()
+        content=f.readlines()   # reading file
 
     # read depths
     _l=[]
