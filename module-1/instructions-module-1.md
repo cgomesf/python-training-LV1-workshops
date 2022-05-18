@@ -33,3 +33,6 @@ To share them with your colleagues, you need to push them to the remote reposito
 
 Make it a habit to regularly check the status of your project (`git status`) and to view the commit history. For this,
 go to the "Git" tab at the bottom. Take a look around.
+
+
+## 4 - Do other things :) 
