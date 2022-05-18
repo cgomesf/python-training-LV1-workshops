@@ -32,15 +32,10 @@ git checkout -b <your-branch-name>
 
 ![PyCharm IDE shows current branch on bottom right](../images/feature_branch.png)
 
-## 3 - Add changes
 
-* Edit the file `module-2/sources/edit_me.py`.
+## 3 - Execute your script
 
-TODO
-
-
-## 4 - Execute your script
-
+* Open the file `module-2/sources/edit_me.py`.
 * Execute the script by simply clicking the green arrow icon on the left of line 8.
 
 
@@ -57,8 +52,14 @@ You can find it on the upper right corner of the IDE, or in the program menu und
 ![Edit your run configurations](../images/edit_run_config.png)
 
 * Enter any number in the "Parameters: " textbox.
-* Run the script again.
-* When you're done, commit your changes.
+* Apply and save.
+
+
+## 4 - Add changes
+
+* Edit the file until the AssertionError is resolved.
+* Commit your changes.
+
 
 ## 5 - Push your branch
 
