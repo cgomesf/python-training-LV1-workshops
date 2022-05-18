@@ -13,9 +13,9 @@ import string
 print(''.join(random.choice(string.ascii_letters) for i in range(20)) + '.txt')
 ```
 * Copy the resulting string. 
-* Inside the folder `workshops/module-1/sources/` create a new file with this random string.
+* Inside the folder `module-1/sources/` create a new file with this random string.
 * Create a commit with this new change. Open the Terminal (tab on the bottom) and type the following commands:
-  * `git add workshops/module-1/<your-random-filename>`
+  * `git add module-1/sources/<your-random-filename>`
   * Run `git status` and read the output. Was your file staged correctly ? 
   * `git commit -m "new file"`. You can change the commit message as you like.
 
