@@ -13,7 +13,7 @@ If you don't see the "Welcome to PyCharm" window, please close any open projects
 
 Insert the link for this repository and click "Clone".
 ```
-https://github.com/sidel-iot/python-training-LV1-workshops.git
+https://github.com/sidel-iot/python-training-LV1-workshops-private.git
 ```
 
 ![Get from VCS](images/clone-project-2.png)
