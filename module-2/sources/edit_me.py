@@ -1,8 +1,8 @@
 import argparse
 
 
-def is_odd(n):  # FIXME
-    return True
+def is_odd(n):
+    return n % 2 == 0
 
 
 def verify_function():
