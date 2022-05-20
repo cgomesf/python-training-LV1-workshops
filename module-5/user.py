@@ -5,41 +5,42 @@ class Product:
         self.price = price
 
 
-class AdminUser:
+class User:
     user_id = 1
 
     def __init__(self, user_name):
         self.user_name = user_name
-        self.balance = None
-        self.user_id = AdminUser.user_id
+        self._user_id = AdminUser.user_id
         AdminUser.user_id += 1
 
     def can_buy(self, product):
-        if self.balance is not None and product.price < self.balance:
-            return "CAN buy"
-        else:
-            return "can't buy"
+        return "can't buy"
 
     def __str__(self):
-        return f"#{self.get_id_value()} {self.get_name_value()}"
-
-    def get_id_value(self):
-        return self.user_id
-
-    def get_name_value(self):
-        return self.user_name
+        return f"#{self._user_id} {self.user_name}"
 
 
-class CustomerUser(AdminUser):
+class CustomerUser(User):
     def __init__(self, user_name, user_balance):
         super().__init__(user_name)
         self.balance = user_balance
 
+    def can_buy(self, product):
+        if product.price < self.balance:
+            return "CAN buy"
+        else:
+            return "can't buy"
 
-class ModeratorUser(AdminUser):
+
+class ModeratorUser(User):
     def __init__(self, user_name: str, user_arguments: set):
         super().__init__(user_name)
         self.topics = user_arguments
+
+
+class AdminUser(User):
+    def __init__(self, user_name: str):
+        super().__init__(user_name)
 
 
 def main():
