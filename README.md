@@ -53,3 +53,6 @@ Double check that the virtual environment is now being used by the IDE. You can 
 
 ![Verify interpreter](images/setup-interpreter-4.png)
 
+Enjoy!
+
+
