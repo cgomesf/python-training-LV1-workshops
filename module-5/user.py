@@ -6,8 +6,7 @@ class user:
         self.name = name
         user.total_user += 1
         self.balance = 0
-        self.user_id = 0
-
+        self.user_id = user.total_user
     def __str__(self):
         return f"#{self.user_id} {self.name}"
 
@@ -24,18 +23,17 @@ class CustomerUser(user):
     def __init__(self, name, wallet):
         super().__init__(name)
         self.balance = wallet
-        self.user_id = user.total_user
+
 
 class ModeratorUser(user):
     def __init__(self, name,tab_info):
         super().__init__(name)
         self.tab = tab_info
-        self.user_id = user.total_user
+
 
 class AdminUser(user):
     def __init__(self, name):
         super().__init__(name)
-        self.user_id = user.total_user
 
 class Product:
     def __init__(self, price):
