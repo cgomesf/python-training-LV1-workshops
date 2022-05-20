@@ -2,6 +2,38 @@ class Page:
     def __init__(self, text):
         self.text = text
 
+class ValidExtensions:
+    @staticmethod
+    def is_pdf():
+        return ".pdf"
+
+    @staticmethod
+    def is_txt():
+        return ".txt"
+
+class Report:
+    NUMBER_OF_PAGES = 0
+
+    @classmethod
+    def number_of_pages(cls):
+        return cls.NUMBER_OF_PAGES
+
+    def __init__(self, filename: str):
+        self.filename = filename
+        self.pages = []
+
+    def add_page(self, page_text):
+        self.pages.append(Page(page_text))
+        Report.NUMBER_OF_PAGES += 1
+
+    def with_valid_extension(name_with_extension: str):
+        is_valid = None
+        if ValidExtensions.is_pdf() in name_with_extension:
+            is_valid = "pdf"
+        elif ValidExtensions.is_txt() in name_with_extension:
+            is_valid = "txt"
+        return is_valid
+
 
 def main():
     page_1 = Page("First page")
