@@ -23,11 +23,8 @@ class Report:
     @staticmethod
     def with_valid_extension(name_with_extension: str):
         is_valid = None
-        if ValidExtensions.is_pdf() in name_with_extension:
-            is_valid = "pdf"
-        elif ValidExtensions.is_txt() in name_with_extension:
-            is_valid = "txt"
-        return is_valid
+        if ValidExtensions.is_pdf() in name_with_extension or ValidExtensions.is_txt() in name_with_extension:
+            return Report(name_with_extension)
 
     def __init__(self, filename: str):
         self.filename = filename
